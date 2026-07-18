@@ -1,0 +1,71 @@
+.overlay {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 1rem;
+    pointer-events: none; /* Allow clicks to pass through to the map */
+}
+
+.overlay > .item {
+    position: absolute;
+    pointer-events: auto;
+}
+
+.theme-switcher {
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.alert-list {
+    right: 1em;
+}
+
+.drawer-side {
+    pointer-events: auto !important;
+    overflow-y: hidden;
+}
+
+.alert {
+    display: grid;
+    grid-template-columns: 5em auto;
+}
+
+.alert__amplitude__info {
+    height: 100%;
+}
+
+.alert__amplitude {
+    height: 100%;
+}
+
+.alert__amplitude__value {
+    height: 100%;
+}
+
+.alerts {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    pointer-events: auto;
+    cursor: default;
+}
+
+.alert {
+    padding: 0 1em;
+    height: 8em;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.drawer-side {
+    pointer-events: none !important;
+}
+
+.drawer-button {
+    pointer-events: auto !important;
+}
